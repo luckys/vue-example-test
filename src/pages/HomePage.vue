@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Welcome to Vue Example Test</h1>
-    <router-link class="button is-primary" to="/app">Go to Application</router-link>
+    <h2>Welcome to Vue Example Test</h2>
+    <router-link class="btn btn-link" to="/app">Go to Application</router-link>
   </div>
 </template>
 
