@@ -1,4 +1,4 @@
-export let cartItemsData = [
+export const cartItemsData = [
   {
     "id": 2,
     "title": "Licensed Cotton Hat",
