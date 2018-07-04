@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-6">
-        <cart-list :cart-items="items">
+        <cart-list :cart-items="cartItems">
           <h3 slot="title">Cart</h3>
         </cart-list>
       </div>
@@ -40,7 +40,7 @@ export default {
 
   data () {
     return {
-      items: items
+      cartItems: items
     }
   }
 }

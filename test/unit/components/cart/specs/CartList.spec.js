@@ -33,6 +33,7 @@ describe('CartList component', () => {
   it('should render total price', () => {
     expect(wrapper.find('strong').text()).toBe('Total: 543.89 €')
   })
+  
   it('should emit an event when remove button is clicked', () => {
     const buttonWrapper = wrapper.find('button');
     buttonWrapper.trigger('click')
