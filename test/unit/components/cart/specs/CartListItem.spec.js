@@ -1,6 +1,6 @@
 import CartListItem from '@/components/Cart/CartListItem'
 import { shallowMount } from '@vue/test-utils'
-import { cartItemsData } from './cartItemsMock'
+import { cartItemsData } from '../../../mocks/cartItemsMock'
 
 describe('CartListItem component', () => {
   let wrapper;

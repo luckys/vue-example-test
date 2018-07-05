@@ -1,7 +1,7 @@
 import CartList from '@/components/Cart/CartList'
 import CartListItem from '@/components/Cart/CartListItem'
 import { mount } from '@vue/test-utils'
-import { cartListsData } from './cartListMock'
+import { cartItemsData } from '../../../mocks/cartItemsMock'
 
 describe('CartList component', () => {
   let wrapper;
@@ -9,7 +9,7 @@ describe('CartList component', () => {
   beforeEach(() => {
     wrapper = mount(CartList, {
       propsData: {
-        cartItems: cartListsData
+        cartItems: cartItemsData
       },
       slots: {
         title: '<h3>Cart</h3>'
@@ -33,11 +33,11 @@ describe('CartList component', () => {
   it('should render total price', () => {
     expect(wrapper.find('strong').text()).toBe('Total: 543.89 €')
   })
-  
+
   it('should emit an event when remove button is clicked', () => {
     const buttonWrapper = wrapper.find('button');
     buttonWrapper.trigger('click')
     expect(wrapper.emitted('cart-item-removed')).toBeTruthy()
-    expect(wrapper.emitted('cart-item-removed')[0]).toEqual([cartListsData[0].id])
+    expect(wrapper.emitted('cart-item-removed')[0]).toEqual([cartItemsData[0].id])
   })
 })

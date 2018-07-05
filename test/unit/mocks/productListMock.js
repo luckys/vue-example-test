@@ -1,4 +1,4 @@
-export const cartListsData = [{
+export const productListsData = [{
     id: 2,
     title: "Licensed Cotton Hat",
     price: 533.00,
@@ -8,7 +8,7 @@ export const cartListsData = [{
     id: 3,
     title: "Handmade Frozen Salad",
     price: 0.00,
-    "image": "product2.jpg"
+    image: "product2.jpg"
   },
   {
     id: 4,

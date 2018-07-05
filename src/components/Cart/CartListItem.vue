@@ -1,7 +1,7 @@
 <template>
   <li class="list-group-item">
     {{ title }} - {{ price }} €
-    <button type="button" class="btn btn-outline-danger btn-sm" @click="onRemove">Remove</button>
+    <button type="button" class="btn btn-outline-danger btn-sm" @click.prevent="onRemove">Remove</button>
   </li>
 </template>
 

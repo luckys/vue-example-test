@@ -1,9 +1,9 @@
 import cartListService from '@/services/Cart/CartListService'
-import {cartListsData} from '../../components/cart/specs/cartListMock'
+import {cartItemsData} from '../../mocks/cartItemsMock'
 
 describe('CartListService unit test', () => {
 
   it('should return amount of cartItems', () => {
-    expect(cartListService.getAmount(cartListsData)).toBe("543.89")
+    expect(cartListService.getAmount(cartItemsData)).toBe("543.89")
   })
 })
